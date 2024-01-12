@@ -12,6 +12,7 @@ target_compile_options(test_c_1 PRIVATE
         -Werror -Wall -Wextra -pedantic
 
         -Wno-format
+		-Wno-unused-but-set-variable
     >
     $<$<CXX_COMPILER_ID:MSVC>:
         /WX /W4

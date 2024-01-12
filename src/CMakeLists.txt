@@ -98,6 +98,7 @@ target_compile_options(recls PRIVATE
 
         -Wno-deprecated-copy
         -Wno-unused-parameter
+		-Wno-unused-but-set-variable
     >
     $<$<CXX_COMPILER_ID:MSVC>:
         /WX /W4
